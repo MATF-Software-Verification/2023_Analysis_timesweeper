@@ -47,3 +47,24 @@
   - Kada se igra završi potrebno je postavi vrednost _isGameOver_ promenljive na true
 - void testGameOverLabelShownWhenGameOver();
   - Kada se igra završi potrebno je prikazati _GameOverLabel_ labelu
+### Testovi nad PlayerCharacter klasom
+- void testIsGunArmInitializedAfterPlayerCreation();
+  - Kada se inicijalizuje _PlayerCharacter_ instanca potrebno je da se inicijalizuje i njena _gunArm_ promenljiva tipa _GunArm_
+- void testIsShoulderPositionSetAfterPlayerCreation();
+  - Kada se inicijalizuje _PlayerCharacter_ instanca potrebno je da joj se podesi vrednost _shoulderPosition_ promenljive koja se koristi za određivanje pozicije ruke u prostoru
+- void testIncreaseHealthWhileMaxHealth();
+  - Kada se pozove _increaseHealth_ metod nad instancom _PlayerCharacter_ koja ima maksimalnu vrednost _m_health_ promenljive ne bi trebalo da dođe do promene   
+- void testIncreaseHealthWhileNotMaxHealth();
+  - Kada se pozove _increaseHealth_ metod nad instancom _PlayerCharacter_ koja nema maksimalnu vrednost _m_health_ promenljive trebalo bi da se uveća njena vrednost za 1 
+- void testDecreaseHealthWhileNotAt0Health();
+  - Kada se pozove _decreaseHealth_ metod nad instancom _PlayerCharacter_ koja ima više od 0 kao vrednost _m_health_ promenljive trebalo bi da se umanji njena vrednost za 1
+- void testDecreaseHealthWhileAt0Health();
+  - Kada se pozove _decreaseHealth_ metod nad instancom _PlayerCharacter_ koja ima 0 kao vrednost _m_health_ promenljive trebalo bi da dođe do emisije _playerIsDead()_ signala
+- void testShootProjectileCreatesNewProjectile();
+  - Kada se pozove _shootProjectile_ trebalo bi da se doda na scenu i time da se uveća broj item-a u njoj
+### Rezultati izvršenih testova
+- Ukupno je pozvano 23 testa od čega su 2 **init()** koji služi za inicijalizaciju nekih promenljivih pre svakog testa i **cleanup()** koji služi za čišćenje tih istih promenljivih između svaka 2 testa
+- Ovime se okruženje održava istim između svaka 2 testa pa nije bitan redosled izvršavanja
+- Izlaz pokretanja testova se može videti u narednoj slici
+![img](./Screenshots/unit_test_results.jpeg)
+- Može se primetiti da svi testovi prolaze čime je potvrđena ispravna funkcionalnost navedenih zahteva
