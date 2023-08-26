@@ -99,3 +99,17 @@ genhtml -o coverage_html coverage-filtered.info
 - Ovde možemo videti da je pokrivenost linija klase _Game_ 66.9%, ali samo 55% funkcija
 - Takođe možemo videti da je pokrivenost linija klase _PlayerCharacter_ 19.2%, ali zato 37.5%
 - Na osnovu ovih brojeva zaključujemo da bi trebalo pokriti veći broj funkcija testovima i zato je bitno pisati lako testabilan kod
+## Provera upotrebe i curenja memorije pomoću Memcheck
+- Za proveru memorije idealno je koristiti **Valgrind**, specifično njegov alat **Memcheck**
+- Iako curenje memorije ne mora uvek da bude najveći problem u programu, ako se ne ispravi nagomilavanjem može dovesti do velikih problema čak i pada celog programa
+- Pomoću **Memcheck**-a možemo proveriti da li postoji:
+  - Curenje memorije
+  - Upotreba neinicializovanih promenljivih
+  - Pristupanje već oslobođenoj memoriji i dr.
+- Prvo treba izgraditi projekat što lako možemo uraditi pomoću Qt okruženja tako što podesimo da se pomoću Build pravi Release Build
+- Nakon toga se terminalom pozicioniramo u folder u kojem želimo da čuvamo izlaz **Memcheck**-a i pokrećemo sledeću komandu
+```
+valgrind --leak-check=full --track-origins=yes --log-file=memcheck_output.txt ../06-timesweeper/build-timesweeper-Desktop-Release/timesweeper
+```
+- Ovime ćemo pokrenuti igricu sa prikačenim **Memcheck** alatom
+- Nakon malo igranja i umiranja negde na pola prvog nivoa dobijamo sledeći izlaz
