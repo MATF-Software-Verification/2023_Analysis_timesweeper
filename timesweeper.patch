@@ -1,0 +1,439 @@
+diff --git a/timesweeper/Headers/DialogueBox.h b/timesweeper/Headers/DialogueBox.h
+index 2095686..a513069 100644
+--- a/timesweeper/Headers/DialogueBox.h
++++ b/timesweeper/Headers/DialogueBox.h
+@@ -10,19 +10,9 @@ class DialogueBox : public QObject, public QGraphicsPixmapItem
+     Q_OBJECT
+     public:
+         DialogueBox(QPair<DialogueHandler::Speaker, QString> &text);
+-        ~DialogueBox();
+ 
+     private:
+         QGraphicsTextItem *m_currentText;
+-        static const int FONTSIZE = 11;
+-        static const int STRAUSS_TEXT_WIDTH = 280;
+-        static const int STRAUSS_TEXT_POS_X = 5;
+-        static const int STRAUSS_TEXT_POS_Y = 15;
+-        static const int TEXT_WIDTH = 300;
+-        static const int TEXT_POS_X = 2;
+-        static const int TEXT_POS_Y = 2;
+-        static const int POS_OFFSET_X = 50;
+-        static const int POS_OFFSET_Y = -100;
+ };
+ 
+ #endif // DIALOGUEBOX_H
+diff --git a/timesweeper/Headers/Game.h b/timesweeper/Headers/Game.h
+index efa3b27..6882cfa 100644
+--- a/timesweeper/Headers/Game.h
++++ b/timesweeper/Headers/Game.h
+@@ -43,15 +43,15 @@ class Game : public QGraphicsView
+         // Fields
+         static PlayerCharacter *player;
+         static int levelID;
+-        QGraphicsScene *currentLevel{};
++        QGraphicsScene *currentLevel;
+         static Portal *currentLevelPortal;
+         static QPointF currentLevelPlayerStartPosition;
+         QMediaPlayer *music;
+         QCursor cursor;
+         QTimer *mainTimer;
+-        QGraphicsPixmapItem *gameOverScreen{};
+-        QProgressBar *bossHealthBar{};
+-        QLabel *bossHead{};
++        QGraphicsPixmapItem *gameOverScreen;
++        QProgressBar *bossHealthBar;
++        QLabel *bossHead;
+         bool isGameWon  = false;
+ 
+     public slots:
+@@ -61,10 +61,10 @@ class Game : public QGraphicsView
+         void gameOver();
+ 
+     private:
+-        Ui::Game *ui{};
++        Ui::Game *ui;
+         QLabel *m_label;
+-        QLabel *m_gameOverLabel{};
+-        QLabel *m_pauseLabel{};
++        QLabel *m_gameOverLabel;
++        QLabel *m_pauseLabel;
+         bool m_soundOn    = true;
+         bool m_isGameOver = false;
+ };
+diff --git a/timesweeper/Headers/GunArm.h b/timesweeper/Headers/GunArm.h
+index bfe1e69..266532d 100644
+--- a/timesweeper/Headers/GunArm.h
++++ b/timesweeper/Headers/GunArm.h
+@@ -7,7 +7,6 @@ class GunArm : public QGraphicsPixmapItem
+ {
+     public:
+         GunArm();
+-        ~GunArm();
+ };
+ 
+ #endif // GUNARM_H
+diff --git a/timesweeper/Headers/PlayerCharacter.h b/timesweeper/Headers/PlayerCharacter.h
+index a856db6..dd27847 100644
+--- a/timesweeper/Headers/PlayerCharacter.h
++++ b/timesweeper/Headers/PlayerCharacter.h
+@@ -12,7 +12,6 @@ class PlayerCharacter : public Character
+     public:
+         // Methods
+         PlayerCharacter();
+-        ~PlayerCharacter();
+ 
+         void keyPressEvent(QKeyEvent *event) override;
+         void keyReleaseEvent(QKeyEvent *event) override;
+@@ -55,13 +54,13 @@ class PlayerCharacter : public Character
+         void playerIsDead();
+ 
+     private:
+-        qreal m_velocityX = 0;
++        qreal m_velocityX;
+         qreal m_velocityY = 1;
+         qreal m_gravity   = 0.5;
+         int m_health      = 8;
+         bool m_isPaused   = false;
+         bool m_canMove    = false;
+-        bool m_isOnGround = false;
++        bool m_isOnGround;
+         bool m_soundEffectOn = true;
+         QMediaPlayer *m_projectileSound;
+         QPolygonF m_playerRectPoints;
+diff --git a/timesweeper/Source/DialogueBox.cpp b/timesweeper/Source/DialogueBox.cpp
+index 44b6351..06a5d39 100644
+--- a/timesweeper/Source/DialogueBox.cpp
++++ b/timesweeper/Source/DialogueBox.cpp
+@@ -7,26 +7,21 @@ DialogueBox::DialogueBox(QPair<DialogueHandler::Speaker, QString> &text)
+ {
+     m_currentText = new QGraphicsTextItem(this);
+     m_currentText->setPlainText(text.second);
+-    m_currentText->setFont(QFont("Adventure", FONTSIZE));
++    m_currentText->setFont(QFont("Adventure", 11));
+ 
+     if(text.first == DialogueHandler::Speaker::Strauss)
+     {
+         setPixmap(QPixmap(":/Other/Resources/Other/dialogue_box_strauss.png"));
+-        m_currentText->setTextWidth(STRAUSS_TEXT_WIDTH);
+-        m_currentText->setPos(STRAUSS_TEXT_POS_X, STRAUSS_TEXT_POS_Y); //from top left of the pixmap
++        m_currentText->setTextWidth(280);
++        m_currentText->setPos(5, 15); //from top left of the pixmap
+     }
+     else
+     {
+         setPixmap(QPixmap(":/Other/Resources/Other/dialogue_box.png"));
+-        m_currentText->setTextWidth(TEXT_WIDTH);
+-        m_currentText->setPos(TEXT_POS_X, TEXT_POS_Y);
++        m_currentText->setTextWidth(300);
++        m_currentText->setPos(2, 2);
+     }
+ 
+-    QPointF playerPosition = Game::player->pos();
+-    setPos(playerPosition + QPointF(POS_OFFSET_X, POS_OFFSET_Y));
+-}
+-
+-DialogueBox::~DialogueBox()
+-{
+-    m_currentText->deleteLater();
++    QPointF playerPosition = game->player->pos();
++    setPos(playerPosition + QPointF(50, -100));
+ }
+diff --git a/timesweeper/Source/DialogueHandler.cpp b/timesweeper/Source/DialogueHandler.cpp
+index c324573..5b40f38 100644
+--- a/timesweeper/Source/DialogueHandler.cpp
++++ b/timesweeper/Source/DialogueHandler.cpp
+@@ -15,17 +15,17 @@ void DialogueHandler::initializeDialogue()
+     m_sentances      = {};
+     isDialogueActive = false;
+ 
+-    QString filename = ":/Levels/Resources/Levels/level" + QString::number(Game::getLevelID()) + "_dialogue.txt";
++    QString filename = ":/Levels/Resources/Levels/level" + QString::number(game->getLevelID()) + "_dialogue.txt";
+     QFile file(filename);
+ 
+     if(!file.exists())
+     {
+-        qDebug("File doesn't exist!\n");
++        qDebug() << "File doesn't exist!\n";
+         return ;
+     }
+     if(!file.open(QIODevice::ReadOnly))
+     {
+-        qDebug("File open failed!\n");
++        qDebug() << "File open failed!\n";
+         return ;
+     }
+ 
+@@ -52,7 +52,7 @@ void DialogueHandler::initializeDialogue()
+                 m_sentances.append(qMakePair(Speaker::Game, line.at(1)));
+                 break;
+             default:
+-                qDebug("Invalid number given for enum!\n");
++                qDebug() << "Invalid number given for enum!\n";
+         }
+     }
+ 
+@@ -77,7 +77,6 @@ void DialogueHandler::advanceDialogue()
+     }
+     else if(m_currentIndex < m_sentances.size())
+     {
+-            delete m_box;
+             m_box = new DialogueBox(m_sentances[m_currentIndex]);
+             game->scene()->addItem(m_box);
+     }
+diff --git a/timesweeper/Source/Game.cpp b/timesweeper/Source/Game.cpp
+index 6e1aa83..b0a61ed 100644
+--- a/timesweeper/Source/Game.cpp
++++ b/timesweeper/Source/Game.cpp
+@@ -69,7 +69,7 @@ void Game::showCredits()
+ {
+     DialogueHandler::isDialogueActive = false;
+ 
+-    auto *m_creditsLabel = new QLabel(this);
++    QLabel *m_creditsLabel = new QLabel(this);
+     m_creditsLabel->setGeometry(0, 0, 1200, 700);
+     m_creditsLabel->setPixmap(QPixmap(":/Other/Resources/Other/credits.png"));
+     m_creditsLabel->show();
+diff --git a/timesweeper/Source/GunArm.cpp b/timesweeper/Source/GunArm.cpp
+index c519a03..41553a4 100644
+--- a/timesweeper/Source/GunArm.cpp
++++ b/timesweeper/Source/GunArm.cpp
+@@ -4,8 +4,3 @@ GunArm::GunArm()
+ {
+     setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/gun_arm_right.png"));
+ }
+-
+-GunArm::~GunArm()
+-{
+-
+-}
+diff --git a/timesweeper/Source/PlayerCharacter.cpp b/timesweeper/Source/PlayerCharacter.cpp
+index b0d82af..b355e34 100644
+--- a/timesweeper/Source/PlayerCharacter.cpp
++++ b/timesweeper/Source/PlayerCharacter.cpp
+@@ -26,12 +26,6 @@ PlayerCharacter::PlayerCharacter()
+     m_projectileSound->setMedia(QUrl("qrc:/Sounds/Resources/Sounds/projectile.mp3"));
+ }
+ 
+-PlayerCharacter::~PlayerCharacter()
+-{
+-    delete gunArm;
+-    delete m_projectileSound;
+-}
+-
+ //----------------Getters/Setters-------------------
+ 
+ GunArm *PlayerCharacter::getGunArm() const { return gunArm; }
+@@ -73,19 +67,19 @@ void PlayerCharacter::keyPressEvent(QKeyEvent *event)
+     {
+         Menu::help->show();
+     }
+-    else if(event->key() == Qt::Key_R && game->getIsGameOver())
++    else if(event->key() == Qt::Key_R && game->getIsGameOver() == true)
+     {
+         game->getGameOverLabel()->hide();
+         game->setIsGameOver(false);
+         m_health = 8;
+         emit healthChanged();
+-        Game::levelID--;
++        game->levelID--;
+         game->changeLevel();
+     }
+ 
+     if(event->key() == Qt::Key_D && !DialogueHandler::isDialogueActive && !m_isPaused)
+     {
+-        if (Game::getLevelID() == 2)
++        if (game->getLevelID() == 2)
+         {
+             setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/player_no_gun_right.png"));
+         }
+@@ -94,7 +88,7 @@ void PlayerCharacter::keyPressEvent(QKeyEvent *event)
+     }
+     else if(event->key() == Qt::Key_A  && !DialogueHandler::isDialogueActive && !m_isPaused)
+     {
+-        if (Game::getLevelID() == 2)
++        if (game->getLevelID() == 2)
+         {
+            setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/player_no_gun_left.png"));
+         }
+@@ -120,7 +114,7 @@ void PlayerCharacter::keyReleaseEvent(QKeyEvent *event)
+     {
+         m_velocityX = 0;
+         m_canMove   = false;
+-        if (Game::getLevelID() == 2)
++        if (game->getLevelID() == 2)
+         {
+             setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/player_front.png"));
+         }
+@@ -129,7 +123,7 @@ void PlayerCharacter::keyReleaseEvent(QKeyEvent *event)
+     {
+         m_velocityX = 0;
+         m_canMove   = false;
+-        if (Game::getLevelID() == 2)
++        if (game->getLevelID() == 2)
+         {
+             setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/player_front.png"));
+         }
+@@ -150,7 +144,7 @@ void PlayerCharacter::aimAtPoint(QPoint point)
+             aimDirection = AimDirection::aimingRight;
+             gunArm->setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/gun_arm_right.png"));
+             gunArm->setTransformOriginPoint(6, 0);
+-            if(Game::getLevelID() != 2)
++            if(game->getLevelID() != 2)
+             {
+                 setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/player_right.png"));
+             }
+@@ -161,7 +155,7 @@ void PlayerCharacter::aimAtPoint(QPoint point)
+             aimDirection = AimDirection::aimingLeft;
+             gunArm->setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/gun_arm_left.png"));
+             gunArm->setTransformOriginPoint(gunArm->boundingRect().width() - 6, 0);
+-            if(Game::getLevelID() != 2)
++            if(game->getLevelID() != 2)
+             {
+                 setPixmap(QPixmap(":/CharacterModels/Resources/CharacterModels/player_left.png"));
+             }
+@@ -290,7 +284,7 @@ void PlayerCharacter::detectCollision()
+ {
+     QList<QGraphicsItem *> colliding_items = collidingItems();
+ 
+-    if(!colliding_items.empty())
++    if(colliding_items.size())
+     {
+         for(auto & colliding_item : colliding_items)
+         {
+@@ -347,10 +341,10 @@ void PlayerCharacter::detectCollision()
+                 }
+             }
+             else if(typeid(*(colliding_item)) == typeid(Portal) &&
+-                   (Game::currentLevelPortal->x() - x()) < 30 &&
+-                   (Game::currentLevelPortal->y() - y()) < 30)
++                   (game->currentLevelPortal->x() - x()) < 30 &&
++                   (game->currentLevelPortal->y() - y()) < 30)
+             {
+-                game->currentLevel->removeItem(Game::player);
++                game->currentLevel->removeItem(game->player);
+                 emit enteredPortal();
+             }
+             else if(typeid(*(colliding_item)) == typeid(GunArm))
+diff --git a/timesweeper/timesweeper.pro b/timesweeper/timesweeper.pro
+index 53a6827..3dd5091 100644
+--- a/timesweeper/timesweeper.pro
++++ b/timesweeper/timesweeper.pro
+@@ -66,118 +66,3 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
+ 
+ RESOURCES += \
+     resources.qrc
+-
+-DISTFILES += \
+-    Resources/CharacterModels/alien_alpha_front.png \
+-    Resources/CharacterModels/alien_left.png \
+-    Resources/CharacterModels/alien_right.png \
+-    Resources/CharacterModels/gun_arm_left.png \
+-    Resources/CharacterModels/gun_arm_right.png \
+-    Resources/CharacterModels/player_front.png \
+-    Resources/CharacterModels/player_left.png \
+-    Resources/CharacterModels/player_no_gun_left.png \
+-    Resources/CharacterModels/player_no_gun_right.png \
+-    Resources/CharacterModels/player_right.png \
+-    Resources/CharacterModels/strauss_front.png \
+-    Resources/LevelBackgrounds/level_1.png \
+-    Resources/LevelBackgrounds/level_2.png \
+-    Resources/LevelBackgrounds/level_3_dino.jpg \
+-    Resources/LevelBackgrounds/level_4.png \
+-    Resources/LevelBackgrounds/level_5.png \
+-    Resources/Levels/level1.txt \
+-    Resources/Levels/level1_dialogue.txt \
+-    Resources/Levels/level2.txt \
+-    Resources/Levels/level2_dialogue.txt \
+-    Resources/Levels/level3.txt \
+-    Resources/Levels/level3_dialogue.txt \
+-    Resources/Levels/level4.txt \
+-    Resources/Levels/level4_dialogue.txt \
+-    Resources/Levels/level5.txt \
+-    Resources/Levels/level5_dialogue.txt \
+-    Resources/Other/bank_level_4.png \
+-    Resources/Other/big_saloon_level_4.png \
+-    Resources/Other/boss.png \
+-    Resources/Other/church_level_4.png \
+-    Resources/Other/credits.png \
+-    Resources/Other/crosshair.png \
+-    Resources/Other/dialogue_box.png \
+-    Resources/Other/dialogue_box_strauss.png \
+-    Resources/Other/enemy_projectile.png \
+-    Resources/Other/gameover.png \
+-    Resources/Other/general_store_level_4.png \
+-    Resources/Other/health_bar_1.png \
+-    Resources/Other/health_bar_2.png \
+-    Resources/Other/health_bar_3.png \
+-    Resources/Other/health_bar_4.png \
+-    Resources/Other/health_bar_5.png \
+-    Resources/Other/health_bar_6.png \
+-    Resources/Other/health_bar_7.png \
+-    Resources/Other/health_bar_8.png \
+-    Resources/Other/health_level_2.png \
+-    Resources/Other/health_level_3.png \
+-    Resources/Other/health_level_4.png \
+-    Resources/Other/health_level_5.png \
+-    Resources/Other/help.png \
+-    Resources/Other/helpbg.png \
+-    Resources/Other/hotel_level_4.png \
+-    Resources/Other/icon.png \
+-    Resources/Other/office_level_4.png \
+-    Resources/Other/options.png \
+-    Resources/Other/optionsbg.png \
+-    Resources/Other/pause.png \
+-    Resources/Other/player_projectile.png \
+-    Resources/Other/portal.png \
+-    Resources/Other/saloon_level_4.png \
+-    Resources/Other/sheriff_level_4.png \
+-    Resources/Other/sign_level_4.png \
+-    Resources/Other/splash.png \
+-    Resources/Other/volume.png \
+-    Resources/Sounds/bgsound_level_1.mp3 \
+-    Resources/Sounds/bgsound_level_2.mp3 \
+-    Resources/Sounds/bgsound_level_3.mp3 \
+-    Resources/Sounds/bgsound_level_4.mp3 \
+-    Resources/Sounds/bgsound_level_5.mp3 \
+-    Resources/Sounds/projectile.mp3 \
+-    Resources/Terrain/Level_1_Tiles/floor_tile.png \
+-    Resources/Terrain/Level_2_Tiles/inner_tile_lvl2.png \
+-    Resources/Terrain/Level_2_Tiles/single_tile_lvl2.png \
+-    Resources/Terrain/Level_2_Tiles/single_tile_rot_lvl2.png \
+-    Resources/Terrain/Level_2_Tiles/single_tile_spec_lvl2.png \
+-    Resources/Terrain/Level_2_Tiles/spikes_lvl2.png \
+-    Resources/Terrain/Level_2_Tiles/step_tile_lvl2.png \
+-    Resources/Terrain/Level_2_Tiles/step_tile_rot_lvl2.png \
+-    Resources/Terrain/Level_3_Tiles/bodlje.png \
+-    Resources/Terrain/Level_3_Tiles/down.png \
+-    Resources/Terrain/Level_3_Tiles/left_platform.png \
+-    Resources/Terrain/Level_3_Tiles/leftside_down_lvl3.png \
+-    Resources/Terrain/Level_3_Tiles/leftside_tile_lvl3.png \
+-    Resources/Terrain/Level_3_Tiles/platform_tile_lvl3.png \
+-    Resources/Terrain/Level_3_Tiles/right_platform.png \
+-    Resources/Terrain/Level_3_Tiles/rightside_down_lvl3.png \
+-    Resources/Terrain/Level_3_Tiles/rightside_tile_lvl3.png \
+-    Resources/Terrain/Level_3_Tiles/single_tile_lvl3.png \
+-    Resources/Terrain/Level_3_Tiles/ugao1.png \
+-    Resources/Terrain/Level_3_Tiles/ugao2.png \
+-    Resources/Terrain/Level_3_Tiles/underground_tile_lvl3.png \
+-    Resources/Terrain/Level_3_Tiles/water_tile_lvl3.png \
+-    Resources/Terrain/Level_4_Tiles/crate_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/inner_tile_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/platform_left_tile_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/platform_right_tile_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/platform_tile_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/single_tile_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/spikes_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/stone_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_1_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_2_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_3_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_4_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_5_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_6_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_7_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_8_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_9_lvl4.png \
+-    Resources/Terrain/Level_4_Tiles/tile_down_lvl4.png \
+-    Resources/Terrain/Level_5_Tiles/inner_tile_lvl5.png \
+-    Resources/Terrain/Level_5_Tiles/middle_tile_lvl5.png \
+-    Resources/Terrain/Level_5_Tiles/paltform_tile_lvl5.png
