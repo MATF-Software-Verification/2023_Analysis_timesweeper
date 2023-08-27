@@ -1489,6 +1489,10 @@ valgrind --leak-check=full --track-origins=yes --log-file=memcheck_output.txt ..
 ![img](./Screenshots/Memcheck/player_changes.jpg)
 ### Memcheck rezultati
 - Jasno je da ovako mali broj izmena neće napraviti neverovatnu razliku posebno u projektu ovolikih razmera, ali kako u projektu praktično nema poziva za čišćenje memorije, otkrivanja uzroka i ispravljanje svih grešaka bi bio preveliki posao za ovu demonstraciju
+- Da bismo videli rezultate ovih izmena pravimo novi izveštaj tako što opet pozivamo memcheck sledećom komandom
+```
+valgrind --leak-check=full --track-origins=yes --log-file=memcheck_output_after_changes.txt ../06-timesweeper/build-timesweeper-Desktop-Release/timesweeper
+```
 - Nakon izmena i dalje dobijamo ogroman izveštaj
 ```
 ==4436== Memcheck, a memory error detector
