@@ -1,0 +1,1895 @@
+desc: --stacks=yes
+cmd: ../06-timesweeper/build-timesweeper-Desktop-Release/timesweeper
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=149487052
+mem_heap_B=2378289
+mem_heap_extra_B=1538735
+mem_stacks_B=6304
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=252686861
+mem_heap_B=7745931
+mem_heap_extra_B=1554029
+mem_stacks_B=5496
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=372571706
+mem_heap_B=15566115
+mem_heap_extra_B=1762005
+mem_stacks_B=9392
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=452943584
+mem_heap_B=19060836
+mem_heap_extra_B=1773468
+mem_stacks_B=10136
+heap_tree=detailed
+n5: 19060836 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 16037260 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 16037260 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 8231688 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 8231688 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 8231688 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n3: 8231688 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 6440000 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 6440000 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n1: 6440000 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 1791688 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1791688 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 1791688 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 1791688 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 1791688 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1791688 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1791688 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1791688 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1791688 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1791688 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1791688 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1791688 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n2: 1791688 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n0: 191688 in 2 places, all below massif's threshold (1.00%)
+         n0: 0 in 7 places, all below massif's threshold (1.00%)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n3: 4445572 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3299200 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3299200 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3299200 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3299200 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3299200 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3299200 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n3: 3299200 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n2: 1146092 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1145812 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1145812 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1118848 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1118848 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 940800 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 940800 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 940800 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n0: 178048 in 5 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 2 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 1558177 in 798 places, all below massif's threshold (1.00%)
+ n2: 768704 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n2: 512640 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n1: 301120 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 301120 in 21 places, all below massif's threshold (1.00%)
+   n0: 211520 in 75 places, all below massif's threshold (1.00%)
+  n0: 256064 in 41 places, all below massif's threshold (1.00%)
+ n1: 487767 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 487767 in 70 places, all below massif's threshold (1.00%)
+ n1: 208928 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 208928 in 26 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=580913079
+mem_heap_B=18442331
+mem_heap_extra_B=1869309
+mem_stacks_B=9200
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=643780869
+mem_heap_B=18611488
+mem_heap_extra_B=1907784
+mem_stacks_B=44072
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=788337887
+mem_heap_B=19443582
+mem_heap_extra_B=1977738
+mem_stacks_B=34176
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=963611741
+mem_heap_B=19863094
+mem_heap_extra_B=1983826
+mem_stacks_B=31640
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1082498597
+mem_heap_B=19962066
+mem_heap_extra_B=1984790
+mem_stacks_B=40320
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1165533578
+mem_heap_B=20164759
+mem_heap_extra_B=1994225
+mem_stacks_B=36992
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1271078844
+mem_heap_B=20513456
+mem_heap_extra_B=1998544
+mem_stacks_B=32888
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1341456026
+mem_heap_B=20785654
+mem_heap_extra_B=2002930
+mem_stacks_B=35104
+heap_tree=detailed
+n6: 20785654 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 15028548 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 15028548 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 6768608 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 6768608 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 6768608 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n3: 6768608 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 6440000 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 6440000 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n1: 6440000 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 328608 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 328608 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n0: 328608 in 12 places, all below massif's threshold (1.00%)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n3: 4899940 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3299200 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3299200 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3299200 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3299200 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3299200 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3299200 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n3: 3299200 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n2: 1600460 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1600180 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1600180 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1573216 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1573216 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 588516 in 9 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3036442 in 1322 places, all below massif's threshold (1.00%)
+ n2: 1248084 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n3: 946846 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n1: 360080 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 360080 in 38 places, all below massif's threshold (1.00%)
+   n1: 319614 0xDD04D9E: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+    n1: 319614 0xDD10A65: gst_buffer_new_allocate (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+     n0: 319614 in 2 places, all below massif's threshold (1.00%)
+   n0: 267152 in 90 places, all below massif's threshold (1.00%)
+  n0: 301238 in 49 places, all below massif's threshold (1.00%)
+ n1: 905716 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 905716 in 95 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+ n1: 281504 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 281504 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=1448219815
+mem_heap_B=20670032
+mem_heap_extra_B=2004248
+mem_stacks_B=34048
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1525509751
+mem_heap_B=20677848
+mem_heap_extra_B=2004880
+mem_stacks_B=40320
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1629770259
+mem_heap_B=20668454
+mem_heap_extra_B=2005090
+mem_stacks_B=42312
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1796579095
+mem_heap_B=20683536
+mem_heap_extra_B=2005880
+mem_stacks_B=42144
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1900025162
+mem_heap_B=24352958
+mem_heap_extra_B=2001906
+mem_stacks_B=33912
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2025576125
+mem_heap_B=24353070
+mem_heap_extra_B=2001978
+mem_stacks_B=34504
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2177744225
+mem_heap_B=25296887
+mem_heap_extra_B=2028681
+mem_stacks_B=33440
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2253310239
+mem_heap_B=25413867
+mem_heap_extra_B=2029557
+mem_stacks_B=33816
+heap_tree=detailed
+n7: 25413867 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18700028 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 18700028 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 10165288 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 10165288 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 10165288 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 10165288 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 9973600 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 9973600 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n2: 9973600 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 3533600 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+           n1: 3533600 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3533600 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3533600 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3533600 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3533600 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3533600 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                 n1: 3533600 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                  n1: 3533600 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 3533600 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                    n1: 3533600 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 3533600 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 3533600 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                       n1: 3533600 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                        n1: 3533600 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                         n0: 3533600 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n0: 191688 in 2 places, all below massif's threshold (1.00%)
+   n3: 5174740 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3347800 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3347800 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3347800 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3347800 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3347800 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3347800 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n4: 3347800 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n0: 48600 in 6 places, all below massif's threshold (1.00%)
+    n2: 1826660 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1826380 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1826380 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1799416 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1799416 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 814716 in 13 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3325412 in 1328 places, all below massif's threshold (1.00%)
+ n2: 1270734 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 987198 in 95 places, all below massif's threshold (1.00%)
+  n1: 283536 0x573D28D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+   n0: 283536 in 140 places, all below massif's threshold (1.00%)
+ n2: 1232813 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n3: 932011 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n1: 360816 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 360816 in 39 places, all below massif's threshold (1.00%)
+   n1: 305883 0xDD04D9E: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+    n1: 305883 0xDD10A65: gst_buffer_new_allocate (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+     n0: 305883 in 3 places, all below massif's threshold (1.00%)
+   n0: 265312 in 91 places, all below massif's threshold (1.00%)
+  n0: 300802 in 49 places, all below massif's threshold (1.00%)
+ n2: 316992 0x4DEF177: QGraphicsPixmapItem::QGraphicsPixmapItem(QGraphicsItem*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+  n1: 308256 0x124231: Tile::Tile(char) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+   n2: 308256 0x11C8FF: Level::addObject(char, int, int) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n1: 308256 0x11CF15: Level::parseLevelFile(QString) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+     n1: 308256 0x11D5F1: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+      n1: 308256 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 308256 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+        n1: 308256 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+         n1: 308256 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 308256 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 308256 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 308256 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 308256 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+              n1: 308256 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+               n1: 308256 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                n1: 308256 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                 n1: 308256 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                  n1: 308256 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                   n1: 308256 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                    n1: 308256 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 308256 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                      n0: 308256 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 8736 in 5 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+ n1: 282528 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 282528 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=2357656382
+mem_heap_B=25315747
+mem_heap_extra_B=2030621
+mem_stacks_B=37592
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=2482913580
+mem_heap_B=25449331
+mem_heap_extra_B=2031253
+mem_stacks_B=32944
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=2649690704
+mem_heap_B=25455347
+mem_heap_extra_B=2032165
+mem_stacks_B=33648
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2781751993
+mem_heap_B=25685495
+mem_heap_extra_B=2035633
+mem_stacks_B=31536
+heap_tree=detailed
+n7: 25685495 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18821180 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 18821180 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 10165288 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 10165288 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 10165288 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 10165288 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 9973600 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 9973600 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n2: 9973600 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 3533600 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+           n1: 3533600 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3533600 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3533600 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3533600 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3533600 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3533600 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                 n1: 3533600 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                  n1: 3533600 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 3533600 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                    n1: 3533600 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 3533600 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 3533600 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                       n1: 3533600 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                        n1: 3533600 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                         n0: 3533600 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n0: 191688 in 2 places, all below massif's threshold (1.00%)
+   n3: 5295892 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3347800 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3347800 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3347800 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3347800 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3347800 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3347800 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n4: 3347800 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n0: 48600 in 6 places, all below massif's threshold (1.00%)
+    n2: 1947812 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1947532 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1947532 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1920568 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1920568 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 935868 in 15 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3368508 in 1331 places, all below massif's threshold (1.00%)
+ n2: 1372692 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 1089156 in 95 places, all below massif's threshold (1.00%)
+  n1: 283536 0x573D28D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+   n0: 283536 in 140 places, all below massif's threshold (1.00%)
+ n2: 1235195 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n3: 933609 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n1: 361736 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 361736 in 39 places, all below massif's threshold (1.00%)
+   n1: 301961 0xDD04D9E: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+    n1: 301961 0xDD10A65: gst_buffer_new_allocate (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+     n0: 301961 in 3 places, all below massif's threshold (1.00%)
+   n0: 269912 in 91 places, all below massif's threshold (1.00%)
+  n0: 301586 in 49 places, all below massif's threshold (1.00%)
+ n2: 317408 0x4DEF177: QGraphicsPixmapItem::QGraphicsPixmapItem(QGraphicsItem*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+  n1: 308256 0x124231: Tile::Tile(char) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+   n2: 308256 0x11C8FF: Level::addObject(char, int, int) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n1: 308256 0x11CF15: Level::parseLevelFile(QString) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+     n1: 308256 0x11D5F1: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+      n1: 308256 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 308256 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+        n1: 308256 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+         n1: 308256 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 308256 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 308256 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 308256 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 308256 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+              n1: 308256 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+               n1: 308256 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                n1: 308256 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                 n1: 308256 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                  n1: 308256 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                   n1: 308256 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                    n1: 308256 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 308256 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                      n0: 308256 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 9152 in 6 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+ n1: 285152 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 285152 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=2948517309
+mem_heap_B=25544819
+mem_heap_extra_B=2036557
+mem_stacks_B=37800
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=3115288334
+mem_heap_B=25606771
+mem_heap_extra_B=2035525
+mem_stacks_B=26328
+heap_tree=detailed
+n7: 25606771 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18821180 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 18821180 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 10165288 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 10165288 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 10165288 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 10165288 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 9973600 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 9973600 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n2: 9973600 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 3533600 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+           n1: 3533600 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3533600 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3533600 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3533600 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3533600 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3533600 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                 n1: 3533600 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                  n1: 3533600 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 3533600 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                    n1: 3533600 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 3533600 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 3533600 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                       n1: 3533600 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                        n1: 3533600 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                         n0: 3533600 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n0: 191688 in 2 places, all below massif's threshold (1.00%)
+   n3: 5295892 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3347800 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3347800 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3347800 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3347800 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3347800 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3347800 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n4: 3347800 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n0: 48600 in 6 places, all below massif's threshold (1.00%)
+    n2: 1947812 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1947532 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1947532 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1920568 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1920568 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 935868 in 15 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3258972 in 1332 places, all below massif's threshold (1.00%)
+ n2: 1355972 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 1072436 in 95 places, all below massif's threshold (1.00%)
+  n1: 283536 0x573D28D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+   n0: 283536 in 140 places, all below massif's threshold (1.00%)
+ n2: 1285351 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n3: 983917 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n1: 359664 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 359664 in 39 places, all below massif's threshold (1.00%)
+   n1: 351773 0xDD04D9E: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+    n2: 351773 0xDD10A65: gst_buffer_new_allocate (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+     n1: 285540 0x2A969983: ??? (in /usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstmpg123.so)
+      n1: 285540 0x2A969C4A: ??? (in /usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstmpg123.so)
+       n1: 285540 0xDFA6EFE: ??? (in /usr/lib/x86_64-linux-gnu/libgstaudio-1.0.so.0.1603.0)
+        n1: 285540 0xDFA7282: ??? (in /usr/lib/x86_64-linux-gnu/libgstaudio-1.0.so.0.1603.0)
+         n1: 285540 0xDFA8505: ??? (in /usr/lib/x86_64-linux-gnu/libgstaudio-1.0.so.0.1603.0)
+          n1: 285540 0xDD49FEE: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+           n1: 285540 0xDD4C050: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+            n1: 285540 0xDD52E62: gst_pad_push (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+             n1: 285540 0xE0C82C6: gst_base_parse_push_frame (in /usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0.1603.0)
+              n1: 285540 0xE0CB03A: gst_base_parse_finish_frame (in /usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0.1603.0)
+               n1: 285540 0x29954619: ??? (in /usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaudioparsers.so)
+                n1: 285540 0xE0C2DE5: ??? (in /usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0.1603.0)
+                 n1: 285540 0xE0C34DC: ??? (in /usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0.1603.0)
+                  n1: 285540 0xE0C6B22: ??? (in /usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0.1603.0)
+                   n1: 285540 0xDD811E6: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+                    n1: 285540 0x6AD8373: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 285540 0x6AD7AD0: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 285540 0x62D8608: start_thread (pthread_create.c:477)
+                       n0: 285540 0x5FE7132: clone (clone.S:95)
+     n0: 66233 in 2 places, all below massif's threshold (1.00%)
+   n0: 272480 in 91 places, all below massif's threshold (1.00%)
+  n0: 301434 in 49 places, all below massif's threshold (1.00%)
+ n2: 317408 0x4DEF177: QGraphicsPixmapItem::QGraphicsPixmapItem(QGraphicsItem*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+  n1: 308256 0x124231: Tile::Tile(char) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+   n2: 308256 0x11C8FF: Level::addObject(char, int, int) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n1: 308256 0x11CF15: Level::parseLevelFile(QString) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+     n1: 308256 0x11D5F1: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+      n1: 308256 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 308256 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+        n1: 308256 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+         n1: 308256 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 308256 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 308256 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 308256 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 308256 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+              n1: 308256 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+               n1: 308256 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                n1: 308256 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                 n1: 308256 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                  n1: 308256 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                   n1: 308256 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                    n1: 308256 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 308256 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                      n0: 308256 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 9152 in 6 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+ n1: 282528 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 282528 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=3248699401
+mem_heap_B=25507374
+mem_heap_extra_B=2035898
+mem_stacks_B=29032
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=3415463233
+mem_heap_B=25548422
+mem_heap_extra_B=2036658
+mem_stacks_B=26792
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=3548874468
+mem_heap_B=25509480
+mem_heap_extra_B=2036952
+mem_stacks_B=22888
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=3649052843
+mem_heap_B=25572454
+mem_heap_extra_B=2037418
+mem_stacks_B=22176
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=3782468434
+mem_heap_B=25498072
+mem_heap_extra_B=2037624
+mem_stacks_B=27304
+heap_tree=detailed
+n7: 25498072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18821180 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 18821180 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 10165288 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 10165288 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 10165288 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 10165288 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 9973600 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 9973600 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n2: 9973600 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 3533600 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+           n1: 3533600 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3533600 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3533600 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3533600 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3533600 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3533600 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                 n1: 3533600 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                  n1: 3533600 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 3533600 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                    n1: 3533600 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 3533600 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 3533600 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                       n1: 3533600 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                        n1: 3533600 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                         n0: 3533600 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n0: 191688 in 2 places, all below massif's threshold (1.00%)
+   n3: 5295892 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3347800 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3347800 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3347800 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3347800 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3347800 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3347800 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n4: 3347800 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n0: 48600 in 6 places, all below massif's threshold (1.00%)
+    n2: 1947812 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1947532 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1947532 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1920568 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1920568 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 935868 in 15 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3252604 in 1333 places, all below massif's threshold (1.00%)
+ n2: 1355156 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 1071620 in 95 places, all below massif's threshold (1.00%)
+  n1: 283536 0x573D28D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+   n0: 283536 in 140 places, all below massif's threshold (1.00%)
+ n2: 1184236 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n2: 881906 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n0: 522242 in 93 places, all below massif's threshold (1.00%)
+   n1: 359664 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 359664 in 39 places, all below massif's threshold (1.00%)
+  n0: 302330 in 49 places, all below massif's threshold (1.00%)
+ n2: 316992 0x4DEF177: QGraphicsPixmapItem::QGraphicsPixmapItem(QGraphicsItem*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+  n1: 308256 0x124231: Tile::Tile(char) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+   n2: 308256 0x11C8FF: Level::addObject(char, int, int) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n1: 308256 0x11CF15: Level::parseLevelFile(QString) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+     n1: 308256 0x11D5F1: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+      n1: 308256 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 308256 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+        n1: 308256 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+         n1: 308256 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 308256 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 308256 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 308256 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 308256 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+              n1: 308256 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+               n1: 308256 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                n1: 308256 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                 n1: 308256 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                  n1: 308256 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                   n1: 308256 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                    n1: 308256 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 308256 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                      n0: 308256 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 8736 in 6 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+ n1: 282544 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 282544 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=3849453666
+mem_heap_B=25506983
+mem_heap_extra_B=2038737
+mem_stacks_B=26040
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=3982864879
+mem_heap_B=25515498
+mem_heap_extra_B=2039142
+mem_stacks_B=45560
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=4082930266
+mem_heap_B=25516110
+mem_heap_extra_B=2039362
+mem_stacks_B=30768
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=4183051786
+mem_heap_B=25507832
+mem_heap_extra_B=2040168
+mem_stacks_B=26040
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=4283115119
+mem_heap_B=25509820
+mem_heap_extra_B=2040316
+mem_stacks_B=28560
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=4416539077
+mem_heap_B=25514085
+mem_heap_extra_B=2042499
+mem_stacks_B=25000
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=4483245990
+mem_heap_B=25550946
+mem_heap_extra_B=2043102
+mem_stacks_B=44712
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=4616657780
+mem_heap_B=25554870
+mem_heap_extra_B=2043354
+mem_stacks_B=21680
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=4750069561
+mem_heap_B=25555638
+mem_heap_extra_B=2043954
+mem_stacks_B=21200
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=4816775781
+mem_heap_B=25548627
+mem_heap_extra_B=2044197
+mem_stacks_B=45544
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=4950197944
+mem_heap_B=25566722
+mem_heap_extra_B=2045606
+mem_stacks_B=28256
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=5050258937
+mem_heap_B=25567722
+mem_heap_extra_B=2046030
+mem_stacks_B=27512
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=5217213550
+mem_heap_B=25585362
+mem_heap_extra_B=2047342
+mem_stacks_B=27512
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=5350625445
+mem_heap_B=25641406
+mem_heap_extra_B=2048418
+mem_stacks_B=21632
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=5484046568
+mem_heap_B=25676086
+mem_heap_extra_B=2051338
+mem_stacks_B=24056
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=5584184374
+mem_heap_B=25645997
+mem_heap_extra_B=2052139
+mem_stacks_B=27384
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=5717596165
+mem_heap_B=25640405
+mem_heap_extra_B=2051915
+mem_stacks_B=25864
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=5817655046
+mem_heap_B=25805972
+mem_heap_extra_B=2055540
+mem_stacks_B=28432
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=5880523359
+mem_heap_B=25804139
+mem_heap_extra_B=2058685
+mem_stacks_B=24128
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=5887441036
+mem_heap_B=25948731
+mem_heap_extra_B=2059325
+mem_stacks_B=24400
+heap_tree=peak
+n7: 25948731 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18822332 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 18822332 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 10165288 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 10165288 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 10165288 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 10165288 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 9973600 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 9973600 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n2: 9973600 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 3533600 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+           n1: 3533600 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3533600 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3533600 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3533600 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3533600 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3533600 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                 n1: 3533600 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                  n1: 3533600 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 3533600 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                    n1: 3533600 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 3533600 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 3533600 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                       n1: 3533600 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                        n1: 3533600 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                         n0: 3533600 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n0: 191688 in 2 places, all below massif's threshold (1.00%)
+   n3: 5297044 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3347800 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3347800 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3347800 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3347800 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3347800 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3347800 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n4: 3347800 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n0: 48600 in 6 places, all below massif's threshold (1.00%)
+    n2: 1948964 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1948684 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1948684 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1921720 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1921720 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 937020 in 16 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3412896 in 1334 places, all below massif's threshold (1.00%)
+ n3: 1566384 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 923176 in 94 places, all below massif's threshold (1.00%)
+  n1: 351688 0x539011D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n0: 351688 in 4 places, all below massif's threshold (1.00%)
+  n1: 291520 0x573D28D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+   n0: 291520 in 140 places, all below massif's threshold (1.00%)
+ n2: 1243535 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n2: 938967 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n0: 562207 in 93 places, all below massif's threshold (1.00%)
+   n1: 376760 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 376760 in 39 places, all below massif's threshold (1.00%)
+  n0: 304568 in 49 places, all below massif's threshold (1.00%)
+ n2: 318240 0x4DEF177: QGraphicsPixmapItem::QGraphicsPixmapItem(QGraphicsItem*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+  n1: 308256 0x124231: Tile::Tile(char) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+   n2: 308256 0x11C8FF: Level::addObject(char, int, int) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n1: 308256 0x11CF15: Level::parseLevelFile(QString) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+     n1: 308256 0x11D5F1: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+      n1: 308256 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 308256 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+        n1: 308256 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+         n1: 308256 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 308256 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 308256 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 308256 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 308256 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+              n1: 308256 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+               n1: 308256 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                n1: 308256 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                 n1: 308256 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                  n1: 308256 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                   n1: 308256 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                    n1: 308256 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 308256 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                      n0: 308256 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 9984 in 6 places, all below massif's threshold (1.00%)
+ n1: 299984 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 299984 in 31 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=5950309384
+mem_heap_B=25797412
+mem_heap_extra_B=2058412
+mem_stacks_B=26992
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=6013177257
+mem_heap_B=25780738
+mem_heap_extra_B=2060942
+mem_stacks_B=30920
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=6076082492
+mem_heap_B=25818677
+mem_heap_extra_B=2061395
+mem_stacks_B=31480
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=6138950293
+mem_heap_B=25804092
+mem_heap_extra_B=2061444
+mem_stacks_B=24576
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=6201818089
+mem_heap_B=25804858
+mem_heap_extra_B=2061614
+mem_stacks_B=48040
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=6264685879
+mem_heap_B=25836999
+mem_heap_extra_B=2062081
+mem_stacks_B=28168
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=6327555150
+mem_heap_B=25868174
+mem_heap_extra_B=2064522
+mem_stacks_B=38376
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=6390422971
+mem_heap_B=25900091
+mem_heap_extra_B=2065885
+mem_stacks_B=30976
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=6453291283
+mem_heap_B=25870066
+mem_heap_extra_B=2057822
+mem_stacks_B=25904
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=6516159708
+mem_heap_B=25903785
+mem_heap_extra_B=2059735
+mem_stacks_B=26552
+heap_tree=detailed
+n7: 25903785 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18826332 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 18826332 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 10165288 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 10165288 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 10165288 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 10165288 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 9973600 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 9973600 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n2: 9973600 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 3533600 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+           n1: 3533600 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3533600 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3533600 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3533600 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3533600 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3533600 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                 n1: 3533600 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                  n1: 3533600 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 3533600 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                    n1: 3533600 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 3533600 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 3533600 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                       n1: 3533600 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                        n1: 3533600 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                         n0: 3533600 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n0: 191688 in 2 places, all below massif's threshold (1.00%)
+   n3: 5301044 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3347800 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3347800 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3347800 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3347800 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3347800 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3347800 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n4: 3347800 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n0: 48600 in 6 places, all below massif's threshold (1.00%)
+    n2: 1948964 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1948684 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1948684 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1921720 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1921720 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 937020 in 16 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 4280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3333964 in 1334 places, all below massif's threshold (1.00%)
+ n3: 1566848 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 920440 in 94 places, all below massif's threshold (1.00%)
+  n1: 354888 0x539011D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n0: 354888 in 4 places, all below massif's threshold (1.00%)
+  n1: 291520 0x573D28D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+   n0: 291520 in 140 places, all below massif's threshold (1.00%)
+ n2: 1291329 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n3: 986759 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n1: 359664 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 359664 in 39 places, all below massif's threshold (1.00%)
+   n1: 342255 0xDD04D9E: ??? (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+    n1: 342255 0xDD10A65: gst_buffer_new_allocate (in /usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.1603.0)
+     n0: 342255 in 3 places, all below massif's threshold (1.00%)
+   n0: 284840 in 92 places, all below massif's threshold (1.00%)
+  n0: 304570 in 49 places, all below massif's threshold (1.00%)
+ n2: 317408 0x4DEF177: QGraphicsPixmapItem::QGraphicsPixmapItem(QGraphicsItem*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+  n1: 308256 0x124231: Tile::Tile(char) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+   n2: 308256 0x11C8FF: Level::addObject(char, int, int) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n1: 308256 0x11CF15: Level::parseLevelFile(QString) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+     n1: 308256 0x11D5F1: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+      n1: 308256 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 308256 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+        n1: 308256 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+         n1: 308256 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 308256 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 308256 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 308256 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 308256 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+              n1: 308256 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+               n1: 308256 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                n1: 308256 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                 n1: 308256 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                  n1: 308256 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                   n1: 308256 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                    n1: 308256 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 308256 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                      n0: 308256 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 9152 in 6 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+ n1: 282544 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 282544 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=6579032317
+mem_heap_B=25947902
+mem_heap_extra_B=2059514
+mem_stacks_B=26904
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=6641900126
+mem_heap_B=25846498
+mem_heap_extra_B=2059374
+mem_stacks_B=29904
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=6704767917
+mem_heap_B=25846628
+mem_heap_extra_B=2059596
+mem_stacks_B=21752
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=6767636237
+mem_heap_B=25843298
+mem_heap_extra_B=2059694
+mem_stacks_B=45528
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=6830581140
+mem_heap_B=25908938
+mem_heap_extra_B=2059870
+mem_stacks_B=22176
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=6893451001
+mem_heap_B=25856970
+mem_heap_extra_B=2062430
+mem_stacks_B=27096
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=6956319127
+mem_heap_B=25857274
+mem_heap_extra_B=2062590
+mem_stacks_B=45592
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=7019188480
+mem_heap_B=25857406
+mem_heap_extra_B=2062602
+mem_stacks_B=45576
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=7082056800
+mem_heap_B=25857610
+mem_heap_extra_B=2062686
+mem_stacks_B=45560
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=7144924596
+mem_heap_B=25861264
+mem_heap_extra_B=2062816
+mem_stacks_B=21376
+heap_tree=detailed
+n7: 25861264 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18822332 0x517C69F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+  n3: 18822332 0x517C7CE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n1: 10165288 0x51E2ABB: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 10165288 0x51E4916: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 10165288 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 10165288 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 9973600 0x517C22A: QImage::load(QString const&, char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 9973600 0x11D540: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+         n2: 9973600 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 6440000 0x11BCA9: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 6440000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 6440000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+          n1: 3533600 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+           n1: 3533600 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3533600 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3533600 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3533600 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3533600 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3533600 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                 n1: 3533600 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                  n1: 3533600 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 3533600 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                    n1: 3533600 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                     n1: 3533600 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                      n1: 3533600 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                       n1: 3533600 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                        n1: 3533600 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                         n0: 3533600 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n0: 191688 in 2 places, all below massif's threshold (1.00%)
+   n3: 5297044 0x517C80C: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+    n1: 3347800 0x517D79A: QImage::copy(QRect const&) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 3347800 0x517DD27: QImage::detach() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3347800 0x517F127: QImage::reinterpretAsFormat(QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3347800 0x51C11F5: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3347800 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3347800 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+          n4: 3347800 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+           n1: 1600000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 1600000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 1600000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 1600000 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 1600000 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 1600000 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 1600000 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 1600000 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 1600000 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 1600000 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 1600000 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                      n1: 1600000 0x11C10F: Help::Help(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                       n1: 1600000 0x11DD46: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                        n0: 1600000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AE70: Game::makeGameOverLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B887: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n1: 849600 0x11AFB0: Game::makePauseLabel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n1: 849600 0x11B88F: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+             n1: 849600 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+              n0: 849600 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+           n0: 48600 in 6 places, all below massif's threshold (1.00%)
+    n2: 1948964 0x517FEF5: QImage::convertToFormat_helper(QImage::Format, QFlags<Qt::ImageConversionFlag>) const (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+     n1: 1948684 0x51C1056: QRasterPlatformPixmap::createPixmapForImage(QImage, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n2: 1948684 0x51C134D: QRasterPlatformPixmap::fromImage(QImage const&, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 1921720 0x51C0346: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n2: 1921720 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 984700 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 984700 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n2: 984700 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 940800 0x4B85E41: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 940800 0x4B8898D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 940800 0x4C0DEA7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 940800 0x4C351E2: QMainWindow::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 940800 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 940800 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 940800 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                   n1: 940800 0x4B10BDE: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                    n1: 940800 0x11DF2F: Ui_Menu::setupUi(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n1: 940800 0x11DA08: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                      n0: 940800 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+            n0: 43900 in 1 place, below massif's threshold (1.00%)
+         n0: 937020 in 16 places, all below massif's threshold (1.00%)
+       n0: 26964 in 1 place, below massif's threshold (1.00%)
+     n0: 280 in 3 places, all below massif's threshold (1.00%)
+    n0: 280 in 1 place, below massif's threshold (1.00%)
+   n1: 3360000 0xC6D37C1: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+    n1: 3360000 0xC6D504E: ??? (in /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so)
+     n1: 3360000 0x51A372C: QImageReader::read(QImage*) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+      n1: 3360000 0x51A3EB8: QImageReader::read() (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+       n1: 3360000 0x51C02F0: QPlatformPixmap::fromFile(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+        n1: 3360000 0x51B9B26: QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+         n1: 3360000 0x4B7BE10: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 3360000 0x4B83F1F: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 3360000 0x4B855BF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 3360000 0x4B881C0: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 3360000 0x4B8BEB7: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+              n1: 3360000 0x4B10B94: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+               n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                 n1: 3360000 0x4B10F94: QWidgetPrivate::inheritStyle() (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                  n1: 3360000 0x4B10CAB: QWidgetPrivate::setStyle_helper(QStyle*, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+                   n1: 3360000 0x11B746: Game::Game() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                    n1: 3360000 0x11DA74: Menu::Menu(QWidget*) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+                     n0: 3360000 0x117658: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 3347192 in 1334 places, all below massif's threshold (1.00%)
+ n3: 1598490 0x56C3240: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+  n0: 920338 in 94 places, all below massif's threshold (1.00%)
+  n1: 386632 0x539011D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8)
+   n0: 386632 in 4 places, all below massif's threshold (1.00%)
+  n1: 291520 0x573D28D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+   n0: 291520 in 140 places, all below massif's threshold (1.00%)
+ n2: 1208354 0x6AB3E98: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n2: 903272 0x6ACC485: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+   n0: 543608 in 93 places, all below massif's threshold (1.00%)
+   n1: 359664 0x6ACCAAD: g_slice_alloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+    n0: 359664 in 39 places, all below massif's threshold (1.00%)
+  n0: 305082 in 49 places, all below massif's threshold (1.00%)
+ n2: 316992 0x4DEF177: QGraphicsPixmapItem::QGraphicsPixmapItem(QGraphicsItem*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+  n1: 308256 0x124231: Tile::Tile(char) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+   n2: 308256 0x11C8FF: Level::addObject(char, int, int) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n1: 308256 0x11CF15: Level::parseLevelFile(QString) (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+     n1: 308256 0x11D5F1: Level::loadLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+      n1: 308256 0x11B17F: Game::changeLevel() (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+       n1: 308256 0x58ABC29: QObject::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+        n1: 308256 0x4B2025C: QWidget::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+         n1: 308256 0x4BCDD51: QFrame::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+          n1: 308256 0x4BD09D0: QAbstractScrollArea::event(QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+           n1: 308256 0x4ADDA65: QApplicationPrivate::notify_helper(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+            n1: 308256 0x4AE70EF: QApplication::notify(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8)
+             n1: 308256 0x587F809: QCoreApplication::notifyInternal2(QObject*, QEvent*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+              n1: 308256 0x5882487: QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+               n1: 308256 0x58D7E36: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                n1: 308256 0x6AAE17C: g_main_context_dispatch (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                 n1: 308256 0x6AAE3FF: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                  n1: 308256 0x6AAE4A2: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+                   n1: 308256 0x58D7434: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                    n1: 308256 0x587E3AA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                     n1: 308256 0x5886115: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8)
+                      n0: 308256 0x117665: main (in /home/user/Desktop/VS projekat/2023_Analysis_timesweeper/06-timesweeper/build-timesweeper-Desktop-Release/timesweeper)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 8736 in 6 places, all below massif's threshold (1.00%)
+ n1: 285360 0x210AF3F3: ??? (in /usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0)
+  n0: 285360 in 2 places, all below massif's threshold (1.00%)
+ n1: 282544 0x6AB3F3F: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.6400.6)
+  n0: 282544 in 31 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=72
+#-----------
+time=7207793138
+mem_heap_B=25858378
+mem_heap_extra_B=2063094
+mem_stacks_B=45576
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=7270660945
+mem_heap_B=25860258
+mem_heap_extra_B=2063174
+mem_stacks_B=28264
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=7333528748
+mem_heap_B=25859879
+mem_heap_extra_B=2063417
+mem_stacks_B=21152
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=7396396558
+mem_heap_B=25858964
+mem_heap_extra_B=2064444
+mem_stacks_B=27304
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=7459265361
+mem_heap_B=25884162
+mem_heap_extra_B=2064910
+mem_stacks_B=45992
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=7522133797
+mem_heap_B=25902842
+mem_heap_extra_B=2065222
+mem_stacks_B=28720
+heap_tree=empty
