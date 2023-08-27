@@ -11,6 +11,7 @@
   - **UnitTest** - pomoću QtTest biblioteke
   - **Gcov i Lcov** - za proveru pokrivenosti koda testovima
   - **Memcheck** - za proveru upotrebe i curenja memorije
+  - **Massif** - za proveru upotreba hipa i steka
   - **Clang-Tidy i Clazy** - za statičku analizu koda
 
 ## Unit testovi (QtTest)
@@ -177,3 +178,119 @@ valgrind --leak-check=full --track-origins=yes --log-file=memcheck_output_after_
 - Može se primetiti da je izveštaj ipak malo kraći
 - Takođe se može primetiti da više nema napomene o **DialogueHandler** i **DialogueBox** klasa u izveštaju kao i da nema primedbi da **PlayerCharacter** klasa koristi neinicijalizovane vrednosti
 - Iz toga zaključujemo da su napravljene izmene ispravile neke od mnogobrojnih grešaka sa memorijom koje su prisutne u ovom projektu
+## Upotreba hipa i steka pomoću alata Massif
+- **Massif** je još jedan od alata iz **Valgrind**-ovog paketa alata
+- Koristi se za proveru upotrebe memorije na hipu, a uz dodatno namestanje i steku
+- Može ukazati ukoliko u projektu postoji zauzeta memorija na koju nije izgubljena referenca, ali nema upotrebu i nepotrebno zauzima resurse
+- Za pokretanje ovog alata je isto neophodno izgraditi projekat što se opet može lako uraditi pomoću QtCreator alata
+### Upotreba alata Massif za hip memoriju
+- Pozivamo **Massif** pomoću sledeće komande iz terminala
+```
+valgrind --tool=massif ../06-timesweeper/build-timesweeper-Desktop-Release/timesweeper
+```
+- Nakon malo igranja možemo da ugasimo igricu
+- Ovime dobijamo izlazni file koji se zove _massif.out.9939_ i nije baš čitljiv
+- Kako bi dobijeni izlazni file bio čitljivi možemo izvršiti sledeću komandu kako bismo dobili grafik
+```
+ms_print massif.out.9939 > massif_heap.txt
+```
+- Sada imamo ovakav prikaz koji je dosta čitljiviji
+```
+--------------------------------------------------------------------------------
+Command:            ../06-timesweeper/build-timesweeper-Desktop-Release/timesweeper
+Massif arguments:   (none)
+ms_print arguments: massif.out.9939
+--------------------------------------------------------------------------------
+
+
+    MB
+26.66^                                                              @         
+     |                       :@@:::::::::::::::::::::::::#::::@:::::@:::::::@:
+     |                    ::::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |                    : ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |             :::::::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |        :::::::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |     ::@::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |     : @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     |   @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     | ::@:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+     | : @:: @::: :::: :::: ::@ ::::: ::::: :::: ::::: ::#::::@: :::@:::::::@:
+   0 +----------------------------------------------------------------------->Gi
+     0                                                                   6.343
+
+Number of snapshots: 65
+ Detailed snapshots: [2, 5, 19, 42 (peak), 47, 52, 62]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1    156,535,834        3,983,584        2,438,186     1,545,398            0
+  2    305,345,565       17,328,056       15,566,069     1,761,987            0
+```
+- Ovde vidimo da je **Massif** 65 puta zabeležio stanje hip-a u toku izvršavanja i da je u 42-gom preseku zabeležen maksimalan utrošak memorije (peak) koji iznosi **26.6MB**. Na osnovu podataka iz izlaznog file-a može se primetiti da se od početka rada programa povećava utrošak memorije, ali se zatim stabilizuje oko **26MB** nakon čega se ne menja mnogo.
+### Upotreba alata Massif za stek memoriju
+- Pozivamo **Massif** pomoću sledeće komande iz terminala
+```
+valgrind --tool=massif --stacks=yes ../06-timesweeper/build-timesweeper-Desktop-Release/timesweeper
+```
+- Opet dobijamo file koji nije bas najčitljiviji pod imenom _massif.out.12054_
+- Opet ga možemo formatirati sledećom komandom
+```
+ ms_print massif.out.12054 > massif_stack.txt
+```
+- I dobijamo sledeći grafik
+```
+--------------------------------------------------------------------------------
+Command:            ../06-timesweeper/build-timesweeper-Desktop-Release/timesweeper
+Massif arguments:   --stacks=yes
+ms_print arguments: massif.out.12054
+--------------------------------------------------------------------------------
+
+
+    MB
+26.74^                                                              :         
+     |                    :@::::@@:@@:::::@:::::::::::::::::::#:::::@:::::@:::
+     |                  :::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |                  :::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |            @::::::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |       :::::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |    @::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |    @::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |   :@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |   :@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |   :@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |   :@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |   :@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |   :@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |  ::@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |  ::@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |  ::@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     |  ::@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     | :::@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+     | :::@::: :::@::: ::::@:: :@ :@ :::: @ ::: : :::::: :::::#:::::@:::::@:::
+   0 +----------------------------------------------------------------------->Gi
+     0                                                                   7.006
+
+Number of snapshots: 78
+ Detailed snapshots: [4, 12, 20, 24, 26, 31, 51 (peak), 61, 71]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1    149,487,052        3,923,328        2,378,289     1,538,735        6,304
+  2    252,686,861        9,305,456        7,745,931     1,554,029        5,496
+  3    372,571,706       17,337,512       15,566,115     1,762,005        9,392
+  4    452,943,584       20,844,440       19,060,836     1,773,468       10,136
+```
+- Ovde vidimo da je **Massif** 78 puta zabeležio stanje memorije u toku izvršavanja i da je maksimum zabeležen u 51-om presekui iznosi **26.74MB**. Da se primetiti da je ovo dosta slično kao inicijalni poziv, te smatramo da je isto tako u granicama normalnog.
