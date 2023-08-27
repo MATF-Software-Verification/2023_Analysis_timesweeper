@@ -106,6 +106,8 @@ genhtml -o coverage_html coverage-filtered.info
   - Curenje memorije
   - Upotreba neinicializovanih promenljivih
   - Pristupanje već oslobođenoj memoriji i dr.
+- U kodu projekta može se primetiti nedostatak velikog broja destruktora i veliki nedostatak poziva **delete** funkcije tako da se može i očekivati veći broj problema sa memorijom
+- Kako je u pitanju demonstracija upotrebe alata u ove svhre, biće prikazano rešenje jedne instance curenja memorije i jedne instance upotrebe neinicializovanih promenljivih
 - Prvo treba izgraditi projekat što lako možemo uraditi pomoću Qt okruženja tako što podesimo da se pomoću Build pravi Release Build
 - Nakon toga se terminalom pozicioniramo u folder u kojem želimo da čuvamo izlaz **Memcheck**-a i pokrećemo sledeću komandu
 ```
