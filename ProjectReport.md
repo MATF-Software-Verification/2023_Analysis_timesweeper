@@ -139,6 +139,7 @@ valgrind --leak-check=full --track-origins=yes --log-file=memcheck_output.txt ..
 - Ispostavlja se da se pri izmeni trenutno aktivnog **DialogueBox** objekta od strane **DialogueHandler**-a on ne briše već samo biva zamenjen novim
 - Zbog toga se menja vrednost jedinog pokazivača ka tom segmentu memorije i on postaje nedostižan
 - Da bismo rešili dodajemo poziv za _delete_ funkciju u kod odmah pre zamene **DialogueBox**-a
+
 ![img](./Screenshots/Memcheck/dialogue_changes.jpg)
 - Na ovaj način imamo brisanje objekta na koji pokazuje _m_box_ promenljiva odmah pre izmene njene vrednosti, a kako je _delete_ bezbedan za pozivanje nad _nullptr_ nije nepohodno ni da proveravamo da li pokazuje na pravi objekat ili ne
 ### Upotreba neinicializovanih vrednosti promenljive u PlayerCharacter klasi
@@ -294,3 +295,73 @@ Number of snapshots: 78
   4    452,943,584       20,844,440       19,060,836     1,773,468       10,136
 ```
 - Ovde vidimo da je **Massif** 78 puta zabeležio stanje memorije u toku izvršavanja i da je maksimum zabeležen u 51-om presekui iznosi **26.74MB**. Da se primetiti da je ovo dosta slično kao inicijalni poziv, te smatramo da je isto tako u granicama normalnog.
+## Statička analiza koda pomoću Clang-Tidy
+- **Clang-Tidy** je alat za statičku analizu koda, odnosno pregleda kod bez pokretanja
+- Služi za otkrivanje grešaka u kodu kao i ispravljanja neoptimalno napisanih delova koda
+- **Clang-Tidy** je moćan alat, ali sa njim treba biti oprezan, kao što će jedan primer demonstrirati
+- Ovaj alat možemo direkno pokrenuti iz Qt okruženja tako što ćemo u gornjem delu pritisnuti ```Analyze -> Clang-Tidy and Clazy...```
+
+![img](./Screenshots/Clang-tidy/clang-tidy_1.jpeg)
+- **Clazy** samo služi da omogući **Clang-Tidy**-u da tumači Qt kod
+- Zatim ćemo dobiti prozor da biramo nad kojim klasama želimo da primenimo **Clang-Tidy**
+- Za ovu demonstraciju ćemo izabrati sve ovde obrađene klase a to su **DialogueHandler**, **DialogueBox**, **Game** i **PlayerCharacter**
+
+![img](./Screenshots/Clang-tidy/clang-tidy_2.jpg)
+- Neko vreme nakon pokretanja dobijamo spisak mogućih problema i za neke od njih i kako se mogu popraviti
+
+![img](./Screenshots/Clang-tidy/clang-tidy_3.jpg)
+### Statička analiza klase DialogueBox
+- Kada proširimo stavku za _DialogueBox_ klasu dobijamo sledeće probleme koje je **Clang-Tidy** uočio
+
+![img](./Screenshots/Clang-tidy/clang-tidy_dialogueBox_issues.jpg)
+- Kao što vidimo za većinu stvari **Clang-Tidy** nema automatsko rešenje
+- Srećom većina primedbi se odnosi na **magic numbers** odnosno magične brojeve koji predstavljaju brojeve koji su očigledno bitni za rad projekta ali nisu nigde imenovani
+- Praksa je ispisati ovakve bitne brojeve gurpisane zajedno npr. u neku config klasu ili definisati ih u okviru klase koja ih koristi ako se primenju samo u toj jednoj klasi
+- Tako da bismo rešili ove probleme treba da izdvojimo ove brojeve i da ih dodelimo nekim promnljivim i onda da koristimo te promenljive u kodu
+
+![img](./Screenshots/Clang-tidy/clang-tidy_dialogueBox_constants.jpg)
+- Za preostalu jednu izmenu **Clang-Tidy** nam nudi automatsko rešenje (fixit)
+- Da bismo ga primenili potrebno je da selektujemo izmenu i pritisnemo ```Apply fixit``` dugme
+- Nakon toga možemo da razlgedamo razlike u kodu pre i posle ovih izmena
+  - Pre
+
+    ![img](./Screenshots/Clang-tidy/clang-tidy_dialogueBox_before_changes.jpg)
+  - Posle
+
+    ![img](./Screenshots/Clang-tidy/clang-tidy_dialogueBox_after_changes.jpg)
+- Kao što se da primetiti mnogo je jasnije šta koji od brojeva predstavlja kada svaki ima svoje ime
+### Statička analiza klase DialogueHandler
+- Kada proširimo stavku za _DialogueHandler_ klasu dobijamo sledeće probleme koje je **Clang-Tidy** uočio
+
+![img](./Screenshots/Clang-tidy/clang-tidy_dialogueHandler_issues.jpg)
+- Možemo primetiti da je obeleženi problem identičan kao i kod **DialogueBox** problem iste vrste koji je **Clang-Tidy** mogao automatski da reši
+- Za ostale probleme duplim klikom možemo da proverimo gde se nalaze u kodu i videćemo sledeće
+
+![img](./Screenshots/Clang-tidy/clang-tidy_dialogueHandler_qDebug.jpg)
+- Ovo je ispravna upotreba _qDebug()_ funkcije za ispis na izlaz za greške, bar na osnovu Qt-ove dokumentacije koja se može naći ovde: https://doc.qt.io/qt-5/qdebug.html
+- Ovo je primer kada **Clang-Tidy** prijavljuje nešto što nije nužno greška
+
+### Statička analiza klase Game
+- Kada proširimo stavku za _Game_ klasu dobijamo sledeće probleme koje je **Clang-Tidy** uočio
+
+![img](./Screenshots/Clang-tidy/clang-tidy_game_issues.jpg)
+- Kao što se da primetiti dobar deo ovih grešaka su opet magični brojevi, ali kako smo videli kako se te greške rešavaju, nećemo se fokusirati na njih
+- Prva greška sa spiska nas upozorava da konstruktor ne definiše neka polja pri instanciranju _Game_ klase
+- Na sreću postoji automatsko rešenje koje nam nudi **Clang-Tidy** koja dodaje ```{}``` ispred ovih promenljivih kako bih inicijalizovao
+- Gledamo izmene
+  - Pre
+ 
+    ![img](./Screenshots/Clang-tidy/clang-tidy_game_constructors_before.jpg)
+  - Posle
+ 
+    ![img](./Screenshots/Clang-tidy/clang-tidy_game_constructors_after.jpg)
+- Druga greška za koju **Clang-Tidy** se odnosi na definisanje promenljivih čija se vrednost automatski dodeljuje
+- U ovim situacijama je obično čitljivije koristiti _auto_ operator za automatsko određivanje tipa promenljive
+- Gledamo izmene
+  - Pre
+ 
+    ![img](./Screenshots/Clang-tidy/clang-tidy_game_qLabel_before.jpg)
+  - Posle
+ 
+    ![img](./Screenshots/Clang-tidy/clang-tidy_game_qLabel_after.jpg)
+- Ovo je sličan primer kao magični brojevi gde nije nužno pogrešno uraditi na ovaj način, ali ovime se narušava čitljivost koda
