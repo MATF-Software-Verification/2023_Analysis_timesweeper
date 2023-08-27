@@ -365,3 +365,25 @@ Number of snapshots: 78
  
     ![img](./Screenshots/Clang-tidy/clang-tidy_game_qLabel_after.jpg)
 - Ovo je sličan primer kao magični brojevi gde nije nužno pogrešno uraditi na ovaj način, ali ovime se narušava čitljivost koda
+### Statička analiza klase PlayerCharacter
+- Kada proširimo stavku za _PlayerCharacter_ klasu dobijamo sledeće probleme koje je **Clang-Tidy** uočio
+
+![img](./Screenshots/Clang-tidy/clang-tidy_playerCharacter_issues.jpg)
+- Ovde vidimo poveći broj grešaka i pretežno su u pitanju magični brojevi
+- Oni koji nisu se pretežno odnose na pristup statičkih polja kroz instancu umesto direktno kroz klasu i lako su rešivi pomoću fixit-a koje nudi **Clang-Tidy**
+- Ovde može nastati problem ako nismo oprezni i ako samo čekiramo sve moguće izmene bez razmišljanja
+- Kao što možemo videti ovo bi se desilo da samo automatski pustimo da **Clang-Tidy** razmišlja za nas
+  - Pre
+ 
+    ![img](./Screenshots/Clang-tidy/clang-tidy_playerCharacter_advance_before.jpg)
+  - Posle
+ 
+    ![img](./Screenshots/Clang-tidy/clang-tidy_playerCharacter_advance_after.jpg)
+- Ovde **Clang-Tidy** vidi da je override-ovana ```QGraphicsItem::advance``` funckija novom ```PlayerCharacter::advance``` funkcijom i misli da je onda poziv trebalo da se odnosi na novu a ne na staru funkciju i menja poziv što dovodi do greške
+- Iz ovog razloga treba biti oprezan pri upotrebi ovog, a i mnogih drugih alata
+## Zaključak
+- Da sumiramo koji su problemi najuočljivi na ovom projektu:
+  - **Curenje memorije** - projekat praktično nema upotrebu _delete_ i sličnih funkcija za oslobađanje memorije i često se može pronaći gubljenje reference na kreirane objekte
+  - **Manjak testova** - ovo je moguće da je do činjenice što se obično prave odvojeni projekti za testiranje, ali nikakvi testovi nisu bili prisutni
+  - **Nečitkost koda** - veliki broj elemenata koji otežavaju čitanje koda počevši od magičnih brojeva pa do komplikovanih i preopširnih metoda
+  - **Velika spregnutost** - kod nije baš najbolje izdovjen u logičke celine, veliki deo celina imaju neku međusobnu zavisnost
