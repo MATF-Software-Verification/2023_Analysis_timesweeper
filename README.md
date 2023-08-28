@@ -18,3 +18,4 @@
   - **Manjak testova** - ovo je moguće da je do činjenice što se obično prave odvojeni projekti za testiranje, ali nikakvi testovi nisu bili prisutni
   - **Nečitkost koda** - veliki broj elemenata koji otežavaju čitanje koda počevši od magičnih brojeva pa do komplikovanih i preopširnih metoda
   - **Velika spregnutost** - kod nije baš najbolje izdovjen u logičke celine, veliki deo celina imaju neku međusobnu zavisnost
+## Aleksandar Šarbajić 1074/2022
